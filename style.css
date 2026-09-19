@@ -1,0 +1,48 @@
+
+:root{
+  --paper:#f3ead7;
+  --ink:#1d2b2b;
+  --red:#8d2d28;
+  --line:#b9a98d;
+  --card:#fbf7ed;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 20% 10%, #ffffff55, transparent 25%),
+    linear-gradient(135deg,#e9ddc4,#f7f0e1 50%,#e5d7bb);
+  color:var(--ink);
+  font-family: Georgia,"Times New Roman","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+.page{max-width:900px;margin:auto;padding:24px 16px 50px}
+.case-head{
+  border:3px double var(--ink);
+  padding:18px;
+  text-align:center;
+  background:#efe3cae8;
+  box-shadow:0 8px 25px #0002;
+}
+.case-no{font-size:14px;letter-spacing:.25em}
+h1{margin:8px 0 4px;font-size:clamp(28px,6vw,52px);letter-spacing:.08em}
+.subtitle{font-size:15px}
+.stamp{
+  display:inline-block;color:var(--red);border:3px solid var(--red);
+  padding:6px 14px;margin-top:12px;font-weight:700;transform:rotate(-3deg)
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  margin:18px 0;padding:20px;
+  box-shadow:0 5px 16px #0001;
+}
+.card h2{margin-top:0;border-bottom:1px solid var(--line);padding-bottom:8px}
+.warning{border-left:6px solid var(--red);background:#fff8f0}
+pre{white-space:pre-wrap;line-height:1.8;font-family:inherit}
+.footer{text-align:center;opacity:.7;margin-top:30px;font-size:13px}
+a{color:#314f62}
+.button{
+ display:inline-block;padding:10px 16px;border:1px solid var(--ink);
+ text-decoration:none;background:#eee2ca;color:var(--ink);margin:4px
+}
